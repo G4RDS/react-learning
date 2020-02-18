@@ -4,7 +4,11 @@ import './Button.css'
 
 const Button = props => {
   return (
-    <button className="button" style={{ backgroundColor: props.color }}>
+    <button
+      className="button"
+      style={{ backgroundColor: props.bgColor, color: props.color }}
+      onClick={props.onClick}
+    >
       {props.text}
     </button>
   )

@@ -1,5 +1,7 @@
 .button {
+  margin-top: 1rem;
   padding: 0.5em 1em;
+
   border: none;
   border-radius: 0.25em;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
@@ -7,4 +9,8 @@
   color: #fff;
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+.button:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
