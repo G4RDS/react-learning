@@ -16,7 +16,7 @@ function TopPage() {
       <Title />
       <Button text="ボタン" color="#3b7efa" />
 
-      {/* (2) ボタンが押されたときに実行したい onPracticeClicked 関数をコンポーネントに渡そう */}
+      {/* (3) ボタンが押されたときに実行したい onPracticeClicked 関数をコンポーネントに渡そう */}
       <Practice />
     </div>
   )
