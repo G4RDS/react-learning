@@ -9,6 +9,8 @@ import Practice from '../components/Practice'
 function TopPage() {
   const onPracticeClicked = () => {
     console.log('練習ボタンがクリックされました。')
+  }
+
   const onButtonClick = () => {
     console.log('ボタンがクリックされました')
   }
@@ -16,7 +18,7 @@ function TopPage() {
   return (
     <div id="container">
       <Title />
-      
+
       <Button
         text="ボタン"
         bgColor="#3b7efa"
@@ -31,7 +33,7 @@ function TopPage() {
       />
 
       {/* (3) ボタンが押されたときに実行したい onPracticeClicked 関数をコンポーネントに渡そう */}
-      <Practice />
+      <Practice onClick={onPracticeClicked} />
     </div>
   )
 }
