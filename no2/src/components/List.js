@@ -9,7 +9,14 @@ const List = props => {
     { name: 'Takumi', grade: 7 },
   ]
 
-  return <ul>{/* (1) dataをmapして、三つのliを作りましょう */}</ul>
+  return (
+    <ul>
+      {/* (1) dataをmapして、三つのliを作りましょう */}
+      {data.map(d => (
+        <li>{`${d.name}: ${d.grade}th`}</li>
+      ))}
+    </ul>
+  )
 }
 
 export default List
