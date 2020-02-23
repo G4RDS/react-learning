@@ -1,0 +1,13 @@
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+}
+
+form {
+  padding: 2rem;
+  background: #efefef;
+  border-radius: 1rem;
+}
