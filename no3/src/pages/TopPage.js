@@ -21,8 +21,16 @@ function TopPage() {
 
   return (
     <div id="container">
-      <form onSubmit={onSubmit}>
-        <input type="text" value={name} onChange={onNameChange} />
+      <form className="form" onSubmit={onSubmit}>
+        <h1 className="form--title">高専生用登録フォーム</h1>
+
+        <h3 className="form--label">名前</h3>
+        <input
+          className="form--input"
+          type="text"
+          value={name}
+          onChange={onNameChange}
+        />
       </form>
     </div>
   )
