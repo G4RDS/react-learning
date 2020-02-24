@@ -1,0 +1,20 @@
+.todoitem {
+  display: flex;
+  align-items: center;
+
+  padding: 1rem 1.5rem;
+  border-radius: 0.25rem;
+
+  transition: 0.3s;
+
+  cursor: pointer;
+}
+.todoitem:hover {
+  background: #e7f0ff;
+}
+
+.todoitem--title {
+  color: #222a5a;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
