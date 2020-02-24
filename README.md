@@ -1,7 +1,7 @@
 # React 勉強会 実習用リポジトリ
 
 このリポジトリは、prane.jpn で行われる React 勉強会の実習において使用する教材です。  
-スライドの他、参考資料などを README の最後にまとめてありますので、適宜ご覧ください。
+スライドや参考資料などは [Notion](https://www.notion.so/prane-React-435f6bd7c6b94c70a1b58a4d27e4d528) にまとめてありますので、適宜ご覧ください。
 
 ## 実習方法
 
@@ -18,9 +18,3 @@ yarn をインストールするには、**npm i -g yarn**を実行してくだ�
 ### React アプリケーションをビルドする
 
 **yarn build**
-
-# 参考資料
-
-- [スライド（準備中）](#)
-- [仮想 DOM は本当に“速い”のか？ DOM 操作の新しい考え方を、フレームワークを実装して理解しよう - エンジニア Hub](https://employment.en-japan.com/engineerhub/entry/2020/02/18/103000)
-- [styled-components を使った CSS 設計 - Qiita](https://qiita.com/taneba/items/4547830b461d11a69a20)
