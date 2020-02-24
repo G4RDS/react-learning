@@ -6,7 +6,7 @@ import './TopPage.css'
 
 import TodoItem from '../components/TodoItem'
 
-const TopPage = ({ items, addItem }) => {
+const TopPage = ({ items, addItem, completeItem }) => {
   const [input, setInput] = useState('')
 
   // 追加フォームのinputが変更されたときに呼ばれるリスナー
@@ -25,15 +25,27 @@ const TopPage = ({ items, addItem }) => {
     setInput('')
   }
 
+  // Todoアイテムがクリックされたときに呼ばれるリスナー
+  const onItemComplete = index => {
+    completeItem(index)
+  }
+
   return (
     <div id="container">
       <div className="todolist">
         <h1 className="todolist--title">Todo List</h1>
 
         <ul className="todolist--list">
-          {items.map((item, ind) => (
-            <TodoItem item={item} key={ind} />
-          ))}
+          {items.map(
+            (item, ind) =>
+              !item.isCompleted && (
+                <TodoItem
+                  item={item}
+                  onComplete={() => onItemComplete(ind)}
+                  key={ind}
+                />
+              )
+          )}
         </ul>
 
         <form className="todolist--add" onSubmit={onAddItem}>
@@ -59,6 +71,9 @@ export default connect(
   dispatch => ({
     addItem(title) {
       dispatch(Actions.addItem(title))
+    },
+    completeItem(title) {
+      dispatch(Actions.completeItem(title))
     },
   })
 )(TopPage)
